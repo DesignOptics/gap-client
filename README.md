@@ -41,6 +41,8 @@ Please note that this project uses a [Makefile](./Makefile) to manage it. Simply
 1. List available tests: `make`
 1. Chose one test to run: `make gap`
 
+> NOTE: You can find the source code for the tests [here](./tests/)
+
 ### Build
 
 1. Change version string: `nano VERSION` *(edit and save the string)*
@@ -54,7 +56,11 @@ Please note that this project uses a [Makefile](./Makefile) to manage it. Simply
 ### Use
 
 In your project:
-1. Put `gap_client>=1.0.0` in project requirements.txt (*substitute the version number to the latest*)
+1. Put `gap_client>=1.0.0` in project `requirements.txt` (*substitute the version number to the latest*)
 1. Reload requirements with: `pip install -r requirements.txt`
 1. Import the package with: `from gap_client import Client as gap`
 1. Use the client with: `print(gap.do_something())`
+
+### Examples
+
+You can find examples [here](./examples/)

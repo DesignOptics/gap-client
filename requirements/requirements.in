@@ -1,0 +1,2 @@
+beautifulsoup4>=4.12.2
+requests-oauth2client>=1.2.0
