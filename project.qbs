@@ -47,6 +47,7 @@ Project{
 				"azure-pipelines.yml",
 				"requirements/*",
 				"setup.*",
+				".github/**/*",
 			]
 		}
 	}
