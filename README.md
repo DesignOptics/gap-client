@@ -50,6 +50,7 @@ Please note that this project uses a [Makefile](./Makefile) to manage it. Simply
 
 ### Deploy
 
+1. Make sure `PYPI_TOKEN` environment variable is set (*set in pypi.org account*)
 1. Push project package to pypi: `make pypi-push`
 1. Verify that the package version is uploaded to [https://pypi.org/project/gap-client/](https://pypi.org/project/gap-client/)
 
@@ -59,7 +60,7 @@ In your project:
 1. Put `gap_client>=1.0.0` in project `requirements.txt` (*substitute the version number to the latest*)
 1. Reload requirements with: `pip install -r requirements.txt`
 1. Import the package with: `from gap_client import Client as gap`
-1. Use the client with: `print(gap.do_something())`
+1. Use the client. This example simply prints a hellp text: `print(gap.hello_gap())`
 
 ### Examples
 
