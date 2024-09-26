@@ -72,11 +72,10 @@ info:
 	@echo "GAP_TOOL_NAME=$(GAP_TOOL_NAME)"
 	@echo "GAP_VERSION=$(GAP_VERSION)"
 	@echo "PYPI_REGISTRY_PASSWORD=\"$(shell echo $(PYPI_REGISTRY_PASSWORD))\""  # Escaping and quoting the password
-	@echo "PYPI_REGISTRY_PASSWORD=$(PYPI_REGISTRY_PASSWORD)"
 	@echo "PYPI_REGISTRY_URL=$(PYPI_REGISTRY_URL)"
 	@echo "PYPI_REGISTRY_URL_BASE=$(PYPI_REGISTRY_URL_BASE)"
 	@echo "PYPI_REGISTRY_USERNAME=$(PYPI_REGISTRY_USERNAME)"
-	@echo "PYPI_TOKEN=$(PYPI_TOKEN) ( ${PYPI_TOKEN} )"
+	@echo "PYPI_TOKEN=\"$(shell echo $(PYPI_TOKEN))\""  # Escaping and quoting the password
 	@echo "REQUIREMENTS_DIR=$(REQUIREMENTS_DIR)"
 	@echo "ROOT_DIR=$(ROOT_DIR)"
 	@echo "SHELL=$(SHELL)"
