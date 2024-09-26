@@ -12,6 +12,8 @@ jobs:
           architecture: 'x64'
       - name: Show environment info
         run: make ver info env
+      - name: Intall requirements
+        run: make req
       - name: Build package
         run: make pypi-build
       - name: Push package
